@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Кубики</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    nav a {
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      color: #333;
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #e6e6e6;
+    }
+    .cube {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+      margin: 20px;
+      display: inline-block;
+    }
+    .cube.static {
+      position: static;
+    }
+    .cube.relative {
+      position: relative;
+      left: 50px;
+      top: 20px;
+    }
+    .cube.absolute {
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+    }
+    .cube.fixed {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    }
+    .cube.sticky {
+      position: sticky;
+      top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Кубики</h1>
+  </header>
+  <nav>
+    <a href="index.html">Главная</a>
+  </nav>
+  <div class="cube static"></div>
+  <div class="cube relative"></div>
+  <div class="cube absolute"></div>
+  <div class="cube fixed"></div>
+  <div class="cube sticky"></div>
+</body>
+</html>
