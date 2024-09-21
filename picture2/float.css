@@ -1,0 +1,30 @@
+.container{
+  width: 100%;
+  margin: 0 15%;
+}
+
+.orange {
+  width: 800px;
+  height: 90px;
+  background-color: rgb(250, 184, 2);
+  clear: both;
+}
+
+.item {
+  width: 200px;
+  height: 250px;
+  float: left;
+}
+
+.red {
+  background: red;
+}
+.green {
+  background-color: #309e0e;
+}
+.blue {
+  background-color: rgb(7, 136, 206);
+}
+.black {
+  background-color: black;
+}
