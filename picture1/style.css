@@ -1,0 +1,235 @@
+body {
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  display: grid;
+  width: 740px;
+  grid-template: repeat(32, 20px) / repeat(18, 1fr);
+  border: 3px solid red;
+  text-align: center;
+}
+
+.header {
+  background-color: #FF85F8;
+  font-size: 14px;
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 1;
+  grid-row-end: 12;
+  display: grid;
+  grid-template-rows: 20px 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.header-content {
+  width: 80%;
+  height: 70%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.header-item {
+  width: 70%;
+  height: 40%;
+  background-color: black;
+}
+
+.menu {
+  background-color: rgb(132, 130, 130);
+  font-size: 14px;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 12;
+  grid-row-end: 19;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 13;
+  grid-row-end: 18;
+}
+
+.content-item1 {
+  background-color: red;
+}
+
+.content-item2 {
+  background-color: orange;
+}
+
+.content-item3 {
+  background-color: cyan;
+}
+
+.content-item4 {
+  background-color: yellow;
+}
+
+.footer {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 19;
+  grid-row-start: 19;
+  grid-row-end: 33;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-left {
+  display: grid;
+  font-size: 15px;
+  background-color: forestgreen;
+  grid-template-rows: 60px 1fr;
+}
+
+.left-content {
+  display: grid;
+  background-color: goldenrod;
+  justify-self: center;
+  width: 80%;
+  grid-template-rows: 40px 1fr;
+}
+
+.left-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-item1 {
+  background-color: #ff38de;
+}
+
+.left-item2 {
+  background-color: yellow;
+}
+
+.footer-center {
+  display: grid;
+  background-color: cyan;
+  grid-template-rows: 60px 1fr;
+}
+
+.footer-center,
+.center-item1,
+.center-item2,
+.center-item3,
+.center-item4,
+.center-item5,
+.center-item6 {
+  font-size: 15px;
+}
+
+.center-item1 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 22;
+  grid-row-end: 33;
+  background-color: red;
+}
+
+.center-item2 {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 22;
+  grid-row-end: 33;
+  background-color: yellow;
+}
+
+.center-item3 {
+  grid-column-start: 9;
+  grid-column-end: 10;
+  grid-row-start: 24;
+  grid-row-end: 33;
+  background-color: goldenrod;
+}
+
+.center-item4 {
+  grid-column-start: 10;
+  grid-column-end: 11;
+  grid-row-start: 29;
+  grid-row-end: 33;
+  background-color: red;
+}
+
+.center-item5 {
+  grid-column-start: 11;
+  grid-column-end: 13;
+  grid-row-start: 22;
+  grid-row-end: 33;
+  background-color: goldenrod;
+}
+
+.footer-right {
+  display: grid;
+  font-size: 15px;
+  background-color: blue;
+  grid-column-start: 13;
+  grid-column-end: 19;
+  grid-row-start: 19;
+  grid-row-end: 33;
+}
+
+.right-item1 {
+  background-color: cyan;
+  display: grid;
+  grid-column-start: 13;
+  grid-column-end: 15;
+  grid-row-start: 29;
+  grid-row-end: 33;
+}
+
+.right-item2 {
+  background-color: yellow;
+  display: grid;
+  grid-column-start: 15;
+  grid-column-end: 17;
+  grid-row-start: 26;
+  grid-row-end: 32;
+}
+
+.right-content {
+  background-color: goldenrod;
+  display: grid;
+  grid-column-start: 17;
+  grid-column-end: 19;
+  grid-row-start: 24;
+  grid-row-end: 29;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.right-text1 {
+  font-style: italic;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border-left: 17px solid black;
+  border-right: 17px solid black;
+  grid-row: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+  color: rgb(87, 213, 255);
+  background-color: black;
+}
+
+.right-text2 {
+  font-style: italic;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-left: 17px solid black;
+  border-right: 17px solid black;
+  grid-row: 4 / span 1;
+  justify-self: center;
+  align-self: center;
+  color: rgb(87, 213, 255);
+  background-color: black;
+}
