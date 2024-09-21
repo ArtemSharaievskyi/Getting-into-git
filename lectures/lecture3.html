@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шляхи в HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .relative-path, .absolute-path {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .relative-path {
+            background-color: #f4f4f4;
+        }
+
+        .absolute-path {
+            background-color: #f9f9f9;
+        }
+
+        #local-resources {
+            margin-top: 30px;
+        }
+
+        #internet-resources {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Шляхи в HTML</h1>
+
+    <div class="relative-path">
+        <h2>Відносний шлях</h2>
+        <p>Відносний шлях - це шлях до файлу, який залежить від поточного розташування файлу. Наприклад, якщо ви маєте файл "index.html" у папці "website", а картинка знаходиться в папці "images", то шлях до картинки буде "images/image.jpg".</p>
+    </div>
+
+    <div class="absolute-path">
+        <h2>Абсолютний шлях</h2>
+        <p>Абсолютний шлях - це повний шлях до файлу, який включає в себе весь шлях від кореневої папки до файлу.
+             Наприклад, абсолютний шлях до файлу "image.jpg" у папці "images" на диску "C:" буде: "C:\Users\Користувач\Documents\website\images\image.jpg"</p>
+    </div>
+
+    <div id="local-resources">
+        <h2>Локальні ресурси</h2>
+        <img src="./resources/image1.jpg" alt="Зображення 1" width="200">
+        <img src="./resources/image2.jpg" alt="Зображення 2" width="200">
+        <img src="./resources/image3.jpg" alt="Зображення 3" width="200">
+        <audio controls>
+            <source src="./resources/audio.mp3" type="audio/mpeg">
+        </audio>
+        <video controls width="320" height="240">
+            <source src="./resources/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="internet-resources">
+        <h2>Інтернет-ресурси</h2>
+        <img src="https://media.istockphoto.com/id/1010812838/photo/portrait-of-a-funny-raccoon-with-electric-guitar-showing-a-rock-gesture.jpg?s=612x612&w=0&k=20&c=K8txi3yS9Jp4P_c5jcckLsp1TrHgLTn1rQKriYnqD_c="  width="200" alt="Зображення URL 4">
+        <img src="https://arrowexterminating.com/wp-content/uploads/arrow_feb11-1.jpg" width="200" alt="Зображення URL 5">
+        <img src="https://thumbs.dreamstime.com/b/portrait-funny-raccoon-sunglasses-isolated-white-background-141861419.jpg" width="200" alt="Зображення URL 6">
+    </div>
+</body>
+</html>

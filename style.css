@@ -1,0 +1,89 @@
+/* 1. Загальний селектор */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Селектор тегу */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* 3. Селектор класу */
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+/* 4. Селектор ID */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* 5. Селектор нащадка */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* 6. Селектор дочірнього елемента */
+nav ul > li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* 7. Псевдоклас :hover */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 8. Псевдоклас :first-child */
+ul li:first-child {
+    font-weight: bold;
+}
+
+/* 9. Псевдоклас :last-child */
+ol li:last-child {
+    color: red;
+}
+
+/* 10. Груповий селектор */
+h2, p {
+    margin: 15px 0;
+}
+
+/* 11. Атрибутний селектор */
+img[alt] {
+    border: 2px solid #ddd;
+}
+
+/* 12. Селектор псевдоелемента */
+h1::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #4CAF50;
+    width: 50%;
+    margin: 10px auto;
+}
+
+/* Додаткові стилі */
+.example {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.text {
+    font-size: 16px;
+    color: #555;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
