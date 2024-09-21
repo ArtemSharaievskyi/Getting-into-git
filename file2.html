@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відмінності в стилізації тегів HTML</title>
+    <style>
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        section h2 {
+            color: #333;
+        }
+        
+        section p {
+            line-height: 1.5;
+        }
+        
+        code {
+            background-color: #f2f2f2;
+            padding: 2px 4px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Відмінності в стилізації тегів HTML</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#basic-tags">Базові теги</a></li>
+            <li><a href="#semantic-tags">Семантичні теги</a></li>
+            <li><a href="#style-diff">Стилізація</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="basic-tags">
+            <h2>Базові теги HTML</h2>
+            <p>Базові теги HTML, представлені у першому файлі, є фундаментальними елементами для створення веб-сторінок. Вони забезпечують структуру і базовий контент сторінки.</p>
+        </section>
+        
+        <section id="semantic-tags">
+            <h2>Семантичні теги HTML</h2>
+            <p>Семантичні теги, такі як <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> тощо, допомагають надати сторінці більш змістовну структуру та покращують доступність для користувачів.</p>
+        </section>
+        
+        <section id="style-diff">
+            <h2>Стилізація тегів</h2>
+            <p>У першому файлі стилізація реалізована за допомогою атрибута <code>style</code>, тоді як у другому файлі стилізація винесена в окремий блок <code>&lt;style&gt;</code>. Кожен підхід має свої переваги та недоліки. Використання окремого блоку <code>&lt;style&gt;</code> (як у другому файлі) зазвичай вважається кращою практикою, оскільки дозволяє краще організувати та підтримувати стилі веб-сайту.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Відмінності в стилізації тегів HTML</p>
+    </footer>
+</body>
+</html>
